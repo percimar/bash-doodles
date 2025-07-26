@@ -6,7 +6,7 @@ prev2=''
 prev=''
 cur=''
 p=128
-p_live=32
+p_live=86
 p_birth=1
 sleep=0.2
 
@@ -16,7 +16,6 @@ do
 	do
 		rand=$(($RANDOM % $p))
 		last_char=${prev:$((i-1)):1}
-		2nd_last_char=${prev2:$((i-1)):1}
 		nb=0
 		if [ "$last_char" == "/" ]
 		then
